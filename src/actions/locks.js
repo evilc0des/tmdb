@@ -13,7 +13,7 @@ export function fetchMoviesIfNeeded() {
 function fetchMovies() {
     return dispatch => {
         dispatch(requestMovies());
-        return axios.get(`http://starlord.hackerearth.com/movieslisting`)
+        return axios.get(`https://starlord.hackerearth.com/movieslisting`)
             .then(json => {
                 dispatch(receiveMovies(json))
                 json.data.slice(0, 10).map(movie => {
