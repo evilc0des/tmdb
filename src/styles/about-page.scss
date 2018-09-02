@@ -1,0 +1,22 @@
+.main-about-container {
+    position: relative;
+    top: 64px;
+    margin: 16px 64px;
+
+    .author{
+        display: flex;
+        align-items: center;
+        .my-photo{
+            border-radius: 50%;
+            background: url('/assets/dk.jpg');
+            background-size: cover;
+            background-position: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 16px;
+        }
+    }
+
+    
+}
+
